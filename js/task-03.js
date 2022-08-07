@@ -13,10 +13,10 @@ const images = [
   },
 ];
 
-const ulEl = document.querySelector('.gallery');
+const ListEl = document.querySelector('.gallery');
 
 images.forEach(el => {
-  ulEl.insertAdjacentHTML(
+  ListEl.insertAdjacentHTML(
     'afterbegin',
     `<li><img src = "${el.url}" alt = "${el.alt}"  width = "150" height = "100" /></li>`,
   );

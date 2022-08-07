@@ -8,9 +8,6 @@ const ingredients = [
 ];
 const ulEl = document.querySelector('#ingredients');
 
-// const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
-
-// ulEl.innerHTML = list;
 const makeList = options => {
   return options.map(options => {
     const list = document.createElement("li")
