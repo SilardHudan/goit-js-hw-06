@@ -3,8 +3,8 @@ inputEl.addEventListener('input', onInputChange);
 
 let outputEl = document.querySelector('#name-output');
 
-function onInputChange(e) {
-  inputEl = e.currentTarget.value;
+function onInputChange(event) {
+  inputEl = event.currentTarget.value;
   console.log(inputEl);
 
   inputEl !== ' ' ? (outputEl.innerText = inputEl.trim()) : 'Anonymous';
